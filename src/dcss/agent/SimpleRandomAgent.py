@@ -4,7 +4,7 @@ from dcss.actions.command import Command
 from dcss.agent.base import BaseAgent
 
 
-class SimpleRandomBaseAgent(BaseAgent):
+class SimpleRandomAgent(BaseAgent):
     """
     Agent that takes random cardinal actions to move/attack.
     """

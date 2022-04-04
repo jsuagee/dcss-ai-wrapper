@@ -5,12 +5,16 @@ Make sure to run crawl before running this demo, see:
 from dcss.actions.action import Action
 from dcss.actions.command import Command
 from dcss.connection.game_connection import GameConnection
-from dcss.agent import SimpleRandomAgent
+from dcss.agent.SimpleRandomAgent import SimpleRandomAgent
 
+from connection import config
 
 
 def main():
-    game = GameConnection()
+    game = GameConnection(config=config.LocalConfig())
+    #game = GameConnection()
+
+    #game = DCSSProtocol()
     game.connect()
     print("\n\nconnected!\n\n")
     agent = SimpleRandomAgent()

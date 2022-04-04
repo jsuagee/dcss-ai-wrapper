@@ -3,4 +3,5 @@ __all__ = ['base.py',
            'humaninterfaceagent',
            'simplerlagent',
            'SimpleRandomAgent',
-           'testallcommandsagent']
+           'testallcommandsagent'
+           ]

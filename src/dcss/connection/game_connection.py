@@ -235,7 +235,8 @@ class GameConnection:
             if os.path.exists(self.config.socketpath):
                 raise
 
-        if self.ready_to_connect():
+        #if self.ready_to_connect():
+        if True:
             primary = True
 
             self.crawl_socket = socket.socket(socket.AF_UNIX, socket.SOCK_DGRAM)
